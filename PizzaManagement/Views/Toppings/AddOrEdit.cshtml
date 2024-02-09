@@ -1,0 +1,40 @@
+﻿@model PizzaManagement.Models.Topping
+
+@{
+    ViewData["Title"] = "Add/Edit";
+}
+
+<h1>Add/Edit</h1>
+
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <h1>Topping</h1>
+        <form asp-action="AddOrEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id"/>
+            <div class="form-group">
+                <label asp-for="ToppingName" class="control-label"></label>
+                <input asp-for="ToppingName" class="form-control"/>
+                <span asp-validation-for="ToppingName" class="text-danger"></span>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary w-100" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <a asp-action="Index" class="btn btn-secondary w-100">Back to List</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

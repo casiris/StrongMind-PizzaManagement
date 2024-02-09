@@ -1,0 +1,52 @@
+﻿@model PizzaManagement.Models.Pizza
+
+@{
+    ViewData["Title"] = "Add/Edit";
+}
+
+<h1>Add/Edit</h1>
+
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <h1>Pizza</h1>
+        <form asp-action="AddOrEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group w-100">
+                <label asp-for="PizzaName" class="control-label"></label>
+                <input asp-for="PizzaName" class="form-control"/>
+                <span asp-validation-for="PizzaName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Topping1Id" class="control-label">Topping 1</label>
+                <select asp-for="Topping1Id" class ="form-control" asp-items="ViewBag.Topping1Id"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Topping2Id" class="control-label">Topping 2</label>
+                <select asp-for="Topping2Id" class ="form-control" asp-items="ViewBag.Topping2Id"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Topping3Id" class="control-label">Topping 3</label>
+                <select asp-for="Topping3Id" class ="form-control" asp-items="ViewBag.Topping3Id"></select>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary w-100"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <a asp-action="Index" class="btn btn-secondary w-100">Back to List</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

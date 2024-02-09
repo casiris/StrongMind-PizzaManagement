@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaManagement", "PizzaManagement.csproj", "{AFD3B86F-4639-42CB-89CA-36196840CCE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaManagement", "PizzaManagement.csproj", "{87825488-FBDF-41C8-BDA3-D392238F9EB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AFD3B86F-4639-42CB-89CA-36196840CCE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AFD3B86F-4639-42CB-89CA-36196840CCE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AFD3B86F-4639-42CB-89CA-36196840CCE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AFD3B86F-4639-42CB-89CA-36196840CCE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87825488-FBDF-41C8-BDA3-D392238F9EB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87825488-FBDF-41C8-BDA3-D392238F9EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87825488-FBDF-41C8-BDA3-D392238F9EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87825488-FBDF-41C8-BDA3-D392238F9EB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {33C162EE-E214-410F-9FE9-6F0064752A14}
+		SolutionGuid = {3CE9F7C9-6DD7-4C4C-AC3A-EABB2E927DE3}
 	EndGlobalSection
 EndGlobal
